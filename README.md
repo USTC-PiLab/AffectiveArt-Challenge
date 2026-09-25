@@ -1,6 +1,6 @@
 # Challenge
 
-Code for the artistic style image generation challenge. The project trains one LoRA for each of eight style buckets and generates test images from the test captions, styles, and predicted dimensions.
+Code for the AffectiveArt Challenge 2026. The project trains one LoRA for each of eight style buckets and generates test images from the test captions, styles, and predicted dimensions.
 
 ## Contents
 
@@ -43,11 +43,10 @@ Challenge/
 
 ## Installation
 
-Run the following commands from the `Challenge` root directory.
-
 ### Python environment
 
 ```bash
+git clone https://github.com/USTC-PiLab/AffectiveArt-Challenge.git
 conda create -n challenge python=3.10 -y
 conda activate challenge
 pip install -r requirements.txt
@@ -57,6 +56,7 @@ pip install -r requirements.txt
 Clone DiffSynth-Studio from the official repository:
 
 ```bash
+cd AffectiveArt-Challenge
 git clone https://github.com/modelscope/DiffSynth-Studio.git ./diffsynth-studio
 pip install -e ./diffsynth-studio
 ```
